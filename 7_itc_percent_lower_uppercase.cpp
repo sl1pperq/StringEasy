@@ -14,5 +14,5 @@ double itc_percent_lower_uppercase(string str) {
     if (uppercase == 0 && lowercase == 0) {
         return 0;
     }
-    return (double) uppercase / (double) (uppercase + lowercase) * 100.0;
+    return (double) lowercase / (double) uppercase;
 }
