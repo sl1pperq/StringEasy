@@ -1,18 +1,15 @@
 #include <string>
+#include "str_easy.h"
 using namespace std;
 
 double itc_percent_lower_uppercase(string str) {
-    int uppercase = 0;
-    int lowercase = 0;
-    for (int i = 0; i < str.length(); i++) {
-        if (isupper(str[i])) {
-            uppercase++;
-        } else if (islower(str[i])) {
-            lowercase++;
+    double lower = 0, upper = 0;
+    for (int i = 0; i < itc_len(str); i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            lower += 1;
+        } else {
+            upper += 1;
         }
     }
-    if (uppercase == 0 && lowercase == 0) {
-        return 0;
-    }
-    return (double) lowercase / (double) uppercase;
+    return lower / upper;
 }

@@ -2,13 +2,10 @@
 #include "str_easy.h"
 using namespace std;
 
-string itc_even_place(string str) {
+string sub(string str, int start, int length) {
     string result = "";
-    for (int i = 1; i < itc_len(str); i += 2) {
+    for (int i = start; i < start + length && i < itc_len(str); i++) {
         result += str[i];
-    }
-    if (result == "") {
-        return "-1";
     }
     return result;
 }

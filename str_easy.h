@@ -1,7 +1,8 @@
-#ifndef STREASY_STR_EASY_H
-#define STREASY_STR_EASY_H
+#ifndef STREASY_str_easy.h_H
+#define STREASY_str_easy.h_H
 
 #include <string>
+#include "str_easy.h"
 using namespace std;
 
 string itc_hello_str(string name); // 1
@@ -18,5 +19,6 @@ string itc_cmp_str(string str1, string str2, int num); // 11
 int itc_find_str(string str1, string str2); // 12
 string itc_three_str(string str1, string str2, string str3); // 13
 int itc_max_char_on_end(string str); // 14
+string sub(string str, int start, int length); // sub
 
-#endif //STREASY_STR_EASY_H
+#endif //STREASY_str_easy.h_H

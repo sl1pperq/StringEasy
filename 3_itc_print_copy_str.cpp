@@ -1,4 +1,5 @@
 #include <string>
+#include "str_easy.h"
 #include <iostream>
 using namespace std;
 
